@@ -1,29 +1,29 @@
 .filter-bar {
   display: flex;
-  gap: 8px;
-  margin-bottom: 20px;
-  flex-wrap: wrap;
+  background: #f1f5f9;
+  padding: 4px;
+  border-radius: 12px;
+  gap: 2px;
 }
 
 .filter-btn {
-  padding: 8px 18px;
-  border: 1.5px solid #d0d5dd;
-  border-radius: 20px;
-  background: #fff;
-  color: #344054;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 9px;
+  background: transparent;
+  color: #64748b;
   font-size: 14px;
+  font-weight: 600;
   cursor: pointer;
   transition: all 0.2s;
-  font-weight: 500;
 }
 
 .filter-btn:hover {
-  background: #f2f4f7;
-  border-color: #98a2b3;
+  color: #334155;
 }
 
 .filter-btn.active {
-  background: #1d4ed8;
-  color: #fff;
-  border-color: #1d4ed8;
+  background: #fff;
+  color: #2563eb;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }

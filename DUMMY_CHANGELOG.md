@@ -89,3 +89,4 @@
 - style: add subtle shadow to filter bar (Wed May  6 03:01:32 PM IST 2026)
 - fix: handle case where student has no notifs (Wed May  6 03:01:32 PM IST 2026)
 - feat: add batch read performance improvement (Wed May  6 03:01:32 PM IST 2026)
+- style: improve spacing between priority cards (Wed May  6 03:01:32 PM IST 2026)

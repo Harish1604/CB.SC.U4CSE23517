@@ -24,3 +24,4 @@
 - style: improve priority inbox contrast (Wed May  6 03:01:26 PM IST 2026)
 - docs: update scaling strategy for millions of rows (Wed May  6 03:01:26 PM IST 2026)
 - refactor: clean up logging middleware setup (Wed May  6 03:01:26 PM IST 2026)
+- fix: sqlite foreign key constraint activation (Wed May  6 03:01:26 PM IST 2026)

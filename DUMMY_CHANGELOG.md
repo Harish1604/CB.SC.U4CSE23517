@@ -75,3 +75,4 @@
 - docs: update stage 6 heap vs sort comparison (Wed May  6 03:01:31 PM IST 2026)
 - refactor: clean up unused dependencies (Wed May  6 03:01:31 PM IST 2026)
 - fix: set correct port for backend in vite config (Wed May  6 03:01:31 PM IST 2026)
+- feat: add total count to notification list response (Wed May  6 03:01:31 PM IST 2026)

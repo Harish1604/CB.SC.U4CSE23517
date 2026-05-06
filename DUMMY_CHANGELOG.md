@@ -77,3 +77,4 @@
 - fix: set correct port for backend in vite config (Wed May  6 03:01:31 PM IST 2026)
 - feat: add total count to notification list response (Wed May  6 03:01:31 PM IST 2026)
 - style: add active state to filter buttons (Wed May  6 03:01:31 PM IST 2026)
+- fix: handle student id in query params (Wed May  6 03:01:31 PM IST 2026)

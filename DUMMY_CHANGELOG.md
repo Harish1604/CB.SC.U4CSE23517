@@ -61,3 +61,4 @@
 - feat: add student department to schema (Wed May  6 03:01:30 PM IST 2026)
 - style: improve font weight consistency (Wed May  6 03:01:30 PM IST 2026)
 - docs: add x-request-id header documentation (Wed May  6 03:01:30 PM IST 2026)
+- refactor: optimize sse client tracking map (Wed May  6 03:01:30 PM IST 2026)

@@ -21,3 +21,4 @@
 - style: add hover effects to notification items (Wed May  6 03:01:26 PM IST 2026)
 - fix: handle case where notification message is empty (Wed May  6 03:01:26 PM IST 2026)
 - feat: add filter by placement type (Wed May  6 03:01:26 PM IST 2026)
+- style: improve priority inbox contrast (Wed May  6 03:01:26 PM IST 2026)

@@ -72,3 +72,4 @@
 - fix: incorrect order by clause in fetch query (Wed May  6 03:01:31 PM IST 2026)
 - feat: add student email uniqueness constraint (Wed May  6 03:01:31 PM IST 2026)
 - style: improve contrast for muted text (Wed May  6 03:01:31 PM IST 2026)
+- docs: update stage 6 heap vs sort comparison (Wed May  6 03:01:31 PM IST 2026)

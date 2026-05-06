@@ -4,3 +4,4 @@
 - fix: handle sse connection drops gracefully (Wed May  6 03:01:24 PM IST 2026)
 - docs: update stage 3 query optimization details (Wed May  6 03:01:24 PM IST 2026)
 - feat: add batch mark-as-read endpoint (Wed May  6 03:01:24 PM IST 2026)
+- perf: reduce re-renders in notification list (Wed May  6 03:01:24 PM IST 2026)

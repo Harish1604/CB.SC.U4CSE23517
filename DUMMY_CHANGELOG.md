@@ -6,3 +6,4 @@
 - feat: add batch mark-as-read endpoint (Wed May  6 03:01:24 PM IST 2026)
 - perf: reduce re-renders in notification list (Wed May  6 03:01:24 PM IST 2026)
 - style: update placement badge color to crimson (Wed May  6 03:01:24 PM IST 2026)
+- fix: student id mapping in priority service (Wed May  6 03:01:24 PM IST 2026)

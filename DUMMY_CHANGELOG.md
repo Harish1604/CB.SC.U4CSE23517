@@ -32,3 +32,4 @@
 - docs: add headers section to api design (Wed May  6 03:01:26 PM IST 2026)
 - refactor: simplify request logger middleware (Wed May  6 03:01:26 PM IST 2026)
 - style: add rounded corners to filter buttons (Wed May  6 03:01:26 PM IST 2026)
+- fix: prevent duplicate sse connections for same student (Wed May  6 03:01:27 PM IST 2026)

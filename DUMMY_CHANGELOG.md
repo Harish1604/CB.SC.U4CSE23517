@@ -37,3 +37,4 @@
 - style: use inter font for body text (Wed May  6 03:01:27 PM IST 2026)
 - fix: offset pagination off-by-one error (Wed May  6 03:01:27 PM IST 2026)
 - docs: update stage 2 database justification (Wed May  6 03:01:27 PM IST 2026)
+- refactor: optimize priority inbox heap score (Wed May  6 03:01:27 PM IST 2026)

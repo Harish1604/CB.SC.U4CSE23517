@@ -59,3 +59,4 @@
 - style: add micro-animations for card entry (Wed May  6 03:01:28 PM IST 2026)
 - fix: sqlite sequence reset in seed script (Wed May  6 03:01:28 PM IST 2026)
 - feat: add student department to schema (Wed May  6 03:01:30 PM IST 2026)
+- style: improve font weight consistency (Wed May  6 03:01:30 PM IST 2026)

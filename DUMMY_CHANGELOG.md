@@ -79,3 +79,4 @@
 - style: add active state to filter buttons (Wed May  6 03:01:31 PM IST 2026)
 - fix: handle student id in query params (Wed May  6 03:01:31 PM IST 2026)
 - docs: update stage 5 reliability guarantees (Wed May  6 03:01:32 PM IST 2026)
+- refactor: use template literals for sql queries (Wed May  6 03:01:32 PM IST 2026)

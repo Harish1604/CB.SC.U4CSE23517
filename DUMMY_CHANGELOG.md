@@ -44,3 +44,4 @@
 - style: update result badge to sapphire blue (Wed May  6 03:01:28 PM IST 2026)
 - docs: add logging usage points in stage 2 (Wed May  6 03:01:28 PM IST 2026)
 - refactor: move api client to dedicated folder (Wed May  6 03:01:28 PM IST 2026)
+- fix: handle 404 on non-existent notification (Wed May  6 03:01:28 PM IST 2026)

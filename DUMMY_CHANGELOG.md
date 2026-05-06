@@ -97,3 +97,4 @@
 - feat: add student name to notification card (Wed May  6 03:01:32 PM IST 2026)
 - style: update priority inbox header color (Wed May  6 03:01:32 PM IST 2026)
 - docs: finalize notification system design doc (Wed May  6 03:01:32 PM IST 2026)
+- chore: final cleanup before submission (Wed May  6 03:01:33 PM IST 2026)

@@ -35,3 +35,4 @@
 - fix: prevent duplicate sse connections for same student (Wed May  6 03:01:27 PM IST 2026)
 - feat: add fetch by type query param (Wed May  6 03:01:27 PM IST 2026)
 - style: use inter font for body text (Wed May  6 03:01:27 PM IST 2026)
+- fix: offset pagination off-by-one error (Wed May  6 03:01:27 PM IST 2026)

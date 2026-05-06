@@ -54,3 +54,4 @@
 - fix: handle student id as number in params (Wed May  6 03:01:28 PM IST 2026)
 - feat: add sse broadcast on new notification (Wed May  6 03:01:28 PM IST 2026)
 - style: update event badge to emerald green (Wed May  6 03:01:28 PM IST 2026)
+- docs: clarify rabbitmq vs kafka choice (Wed May  6 03:01:28 PM IST 2026)

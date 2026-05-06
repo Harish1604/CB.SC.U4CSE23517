@@ -55,3 +55,4 @@
 - feat: add sse broadcast on new notification (Wed May  6 03:01:28 PM IST 2026)
 - style: update event badge to emerald green (Wed May  6 03:01:28 PM IST 2026)
 - docs: clarify rabbitmq vs kafka choice (Wed May  6 03:01:28 PM IST 2026)
+- refactor: use try-catch in all route handlers (Wed May  6 03:01:28 PM IST 2026)

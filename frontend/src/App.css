@@ -1,0 +1,75 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background-color: #f9fafb;
+  color: #111827;
+}
+
+body {
+  margin: 0;
+}
+
+.app-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 32px;
+  color: #1d4ed8;
+}
+
+.app-header p {
+  margin: 4px 0 0;
+  color: #6b7280;
+  font-size: 16px;
+}
+
+.app-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.feed-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.feed-header h2 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.empty-msg {
+  text-align: center;
+  padding: 40px;
+  color: #9ca3af;
+  background: #fff;
+  border-radius: 10px;
+  border: 1px dashed #d1d5db;
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+  .app-container {
+    padding: 15px;
+  }
+  
+  .feed-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  
+  .app-header h1 {
+    font-size: 26px;
+  }
+}

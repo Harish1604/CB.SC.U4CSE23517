@@ -1,2 +1,3 @@
 - feat: implement priority ranking logic (Wed May  6 03:01:24 PM IST 2026)
 - refactor: optimize database indexing for notifications (Wed May  6 03:01:24 PM IST 2026)
+- style: improve card layout and spacing (Wed May  6 03:01:24 PM IST 2026)

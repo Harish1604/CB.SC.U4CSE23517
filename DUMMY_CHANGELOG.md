@@ -3,3 +3,4 @@
 - style: improve card layout and spacing (Wed May  6 03:01:24 PM IST 2026)
 - fix: handle sse connection drops gracefully (Wed May  6 03:01:24 PM IST 2026)
 - docs: update stage 3 query optimization details (Wed May  6 03:01:24 PM IST 2026)
+- feat: add batch mark-as-read endpoint (Wed May  6 03:01:24 PM IST 2026)

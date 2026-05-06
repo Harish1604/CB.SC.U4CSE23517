@@ -42,3 +42,4 @@
 - fix: typo in notification schema definition (Wed May  6 03:01:28 PM IST 2026)
 - feat: add health check endpoint (Wed May  6 03:01:28 PM IST 2026)
 - style: update result badge to sapphire blue (Wed May  6 03:01:28 PM IST 2026)
+- docs: add logging usage points in stage 2 (Wed May  6 03:01:28 PM IST 2026)

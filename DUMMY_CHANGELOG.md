@@ -67,3 +67,4 @@
 - style: update header font size for mobile (Wed May  6 03:01:30 PM IST 2026)
 - fix: handle db lock issues during seed (Wed May  6 03:01:30 PM IST 2026)
 - docs: add stage 7 frontend requirements list (Wed May  6 03:01:31 PM IST 2026)
+- refactor: use better-sqlite3 transaction for seeding (Wed May  6 03:01:31 PM IST 2026)

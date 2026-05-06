@@ -70,3 +70,4 @@
 - refactor: use better-sqlite3 transaction for seeding (Wed May  6 03:01:31 PM IST 2026)
 - style: add background gradient to priority section (Wed May  6 03:01:31 PM IST 2026)
 - fix: incorrect order by clause in fetch query (Wed May  6 03:01:31 PM IST 2026)
+- feat: add student email uniqueness constraint (Wed May  6 03:01:31 PM IST 2026)

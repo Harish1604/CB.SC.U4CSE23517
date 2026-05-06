@@ -52,3 +52,4 @@
 - refactor: use structured logs for evaluation service (Wed May  6 03:01:28 PM IST 2026)
 - style: add subtle border to priority inbox (Wed May  6 03:01:28 PM IST 2026)
 - fix: handle student id as number in params (Wed May  6 03:01:28 PM IST 2026)
+- feat: add sse broadcast on new notification (Wed May  6 03:01:28 PM IST 2026)

@@ -11,3 +11,4 @@
 - feat: add loading states for notification fetch (Wed May  6 03:01:24 PM IST 2026)
 - refactor: move priority logic to separate service (Wed May  6 03:01:24 PM IST 2026)
 - style: add subtle shadows to notification cards (Wed May  6 03:01:24 PM IST 2026)
+- fix: cross-origin issues with dev server (Wed May  6 03:01:24 PM IST 2026)

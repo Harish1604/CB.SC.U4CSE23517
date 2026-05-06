@@ -57,3 +57,4 @@
 - docs: clarify rabbitmq vs kafka choice (Wed May  6 03:01:28 PM IST 2026)
 - refactor: use try-catch in all route handlers (Wed May  6 03:01:28 PM IST 2026)
 - style: add micro-animations for card entry (Wed May  6 03:01:28 PM IST 2026)
+- fix: sqlite sequence reset in seed script (Wed May  6 03:01:28 PM IST 2026)

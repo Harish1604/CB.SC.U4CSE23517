@@ -47,3 +47,4 @@
 - fix: handle 404 on non-existent notification (Wed May  6 03:01:28 PM IST 2026)
 - feat: add created_at index for faster sorting (Wed May  6 03:01:28 PM IST 2026)
 - style: improve mobile tap targets for filters (Wed May  6 03:01:28 PM IST 2026)
+- fix: cors options for production environment (Wed May  6 03:01:28 PM IST 2026)

@@ -9,3 +9,4 @@
 - fix: student id mapping in priority service (Wed May  6 03:01:24 PM IST 2026)
 - docs: clarify async architecture in stage 5 (Wed May  6 03:01:24 PM IST 2026)
 - feat: add loading states for notification fetch (Wed May  6 03:01:24 PM IST 2026)
+- refactor: move priority logic to separate service (Wed May  6 03:01:24 PM IST 2026)

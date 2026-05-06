@@ -26,3 +26,4 @@
 - refactor: clean up logging middleware setup (Wed May  6 03:01:26 PM IST 2026)
 - fix: sqlite foreign key constraint activation (Wed May  6 03:01:26 PM IST 2026)
 - feat: add delete notification endpoint (Wed May  6 03:01:26 PM IST 2026)
+- style: update empty state illustration style (Wed May  6 03:01:26 PM IST 2026)

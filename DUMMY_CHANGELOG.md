@@ -13,3 +13,4 @@
 - style: add subtle shadows to notification cards (Wed May  6 03:01:24 PM IST 2026)
 - fix: cross-origin issues with dev server (Wed May  6 03:01:24 PM IST 2026)
 - perf: add wal mode to sqlite for better concurrency (Wed May  6 03:01:24 PM IST 2026)
+- feat: implement mobile responsive filter bar (Wed May  6 03:01:24 PM IST 2026)

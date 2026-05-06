@@ -94,3 +94,4 @@
 - refactor: use arrow functions where appropriate (Wed May  6 03:01:32 PM IST 2026)
 - style: add border-radius to mark-read button (Wed May  6 03:01:32 PM IST 2026)
 - fix: handle invalid type error in post notif (Wed May  6 03:01:32 PM IST 2026)
+- feat: add student name to notification card (Wed May  6 03:01:32 PM IST 2026)

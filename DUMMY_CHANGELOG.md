@@ -19,3 +19,4 @@
 - docs: add sample json response for stage 1 (Wed May  6 03:01:24 PM IST 2026)
 - refactor: use async/await for db operations (Wed May  6 03:01:24 PM IST 2026)
 - style: add hover effects to notification items (Wed May  6 03:01:26 PM IST 2026)
+- fix: handle case where notification message is empty (Wed May  6 03:01:26 PM IST 2026)

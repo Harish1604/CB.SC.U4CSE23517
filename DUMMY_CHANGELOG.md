@@ -63,3 +63,4 @@
 - docs: add x-request-id header documentation (Wed May  6 03:01:30 PM IST 2026)
 - refactor: optimize sse client tracking map (Wed May  6 03:01:30 PM IST 2026)
 - fix: prevent memory leak on sse disconnect (Wed May  6 03:01:30 PM IST 2026)
+- feat: add timestamp to health check (Wed May  6 03:01:30 PM IST 2026)

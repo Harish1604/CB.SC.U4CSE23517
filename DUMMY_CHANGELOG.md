@@ -29,3 +29,4 @@
 - style: update empty state illustration style (Wed May  6 03:01:26 PM IST 2026)
 - perf: optimize join query for student placement notifs (Wed May  6 03:01:26 PM IST 2026)
 - fix: incorrect timestamp format in api response (Wed May  6 03:01:26 PM IST 2026)
+- docs: add headers section to api design (Wed May  6 03:01:26 PM IST 2026)

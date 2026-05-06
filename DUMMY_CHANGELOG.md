@@ -96,3 +96,4 @@
 - fix: handle invalid type error in post notif (Wed May  6 03:01:32 PM IST 2026)
 - feat: add student name to notification card (Wed May  6 03:01:32 PM IST 2026)
 - style: update priority inbox header color (Wed May  6 03:01:32 PM IST 2026)
+- docs: finalize notification system design doc (Wed May  6 03:01:32 PM IST 2026)

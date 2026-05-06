@@ -23,3 +23,4 @@
 - feat: add filter by placement type (Wed May  6 03:01:26 PM IST 2026)
 - style: improve priority inbox contrast (Wed May  6 03:01:26 PM IST 2026)
 - docs: update scaling strategy for millions of rows (Wed May  6 03:01:26 PM IST 2026)
+- refactor: clean up logging middleware setup (Wed May  6 03:01:26 PM IST 2026)

@@ -40,3 +40,4 @@
 - refactor: optimize priority inbox heap score (Wed May  6 03:01:27 PM IST 2026)
 - style: add padding to app container for desktop (Wed May  6 03:01:28 PM IST 2026)
 - fix: typo in notification schema definition (Wed May  6 03:01:28 PM IST 2026)
+- feat: add health check endpoint (Wed May  6 03:01:28 PM IST 2026)

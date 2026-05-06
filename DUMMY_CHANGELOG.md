@@ -14,3 +14,4 @@
 - fix: cross-origin issues with dev server (Wed May  6 03:01:24 PM IST 2026)
 - perf: add wal mode to sqlite for better concurrency (Wed May  6 03:01:24 PM IST 2026)
 - feat: implement mobile responsive filter bar (Wed May  6 03:01:24 PM IST 2026)
+- style: use outfit font for primary headers (Wed May  6 03:01:24 PM IST 2026)

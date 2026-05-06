@@ -85,3 +85,4 @@
 - feat: add created_at to student table (Wed May  6 03:01:32 PM IST 2026)
 - style: update app title to Campus Connect (Wed May  6 03:01:32 PM IST 2026)
 - docs: add manual verification plan (Wed May  6 03:01:32 PM IST 2026)
+- refactor: optimize priority weights map (Wed May  6 03:01:32 PM IST 2026)

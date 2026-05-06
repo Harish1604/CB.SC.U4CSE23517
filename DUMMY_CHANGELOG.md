@@ -16,3 +16,4 @@
 - feat: implement mobile responsive filter bar (Wed May  6 03:01:24 PM IST 2026)
 - style: use outfit font for primary headers (Wed May  6 03:01:24 PM IST 2026)
 - fix: sse heartbeat timeout issues (Wed May  6 03:01:24 PM IST 2026)
+- docs: add sample json response for stage 1 (Wed May  6 03:01:24 PM IST 2026)

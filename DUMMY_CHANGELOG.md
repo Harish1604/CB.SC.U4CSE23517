@@ -49,3 +49,4 @@
 - style: improve mobile tap targets for filters (Wed May  6 03:01:28 PM IST 2026)
 - fix: cors options for production environment (Wed May  6 03:01:28 PM IST 2026)
 - docs: update stage 4 performance tradeoffs (Wed May  6 03:01:28 PM IST 2026)
+- refactor: use structured logs for evaluation service (Wed May  6 03:01:28 PM IST 2026)

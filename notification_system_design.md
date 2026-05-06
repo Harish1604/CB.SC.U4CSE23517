@@ -4,78 +4,89 @@
 Endpoints for handling student notifications.
 
 - `GET /notifications`: Get all notifs. Filters: `studentId`, `type`, `isRead`.
-- `GET /notifications/priority`: Top N unread.
+- `GET /notifications/priority`: Top N unread notifications.
 - `POST /notifications`: Create new (Admin).
 - `PATCH /notifications/:id/read`: Mark one as read.
 - `PATCH /notifications/batch-read`: Mark many as read.
 
-**Real-time:** Using **SSE (Server-Sent Events)** because it's simpler than WebSockets for one-way server-to-client updates.
+**Headers:** 
+- `Authorization: Bearer <token>` (For protected logging/admin APIs)
+- `Content-Type: application/json`
+
+**Real-time:** Using **SSE (Server-Sent Events)**. It's much simpler than WebSockets for one-way server-to-client updates and handles reconnection automatically.
 
 ---
 
 ## Stage 2: Database Design
 Using **SQL (SQLite/PostgreSQL)**. 
-**Why:** Data is relational (students linked to notifs) and we need strict ordering and filtering.
+**Why:** The data is relational (students linked to notifs). We need strict ordering by timestamp and efficient filtering by type/student, which SQL indexes handle perfectly.
 
 **Schema:**
-- `students`: id, name, email, dept
-- `notifications`: id, student_id, type (Placement/Result/Event), message, is_read, priority, created_at
+- `students`: `id (PK)`, `name`, `email`, `department`
+- `notifications`: `id (PK)`, `student_id (FK)`, `type` (Placement/Result/Event), `message`, `is_read`, `priority`, `created_at`
+
+**Logging Points:**
+- `Log("backend", "info", "db", "Database connection established")`
+- `Log("backend", "error", "db", "Query failure: [error message]")`
 
 **Scaling:**
-- Partitioning tables by month.
-- Vertical scaling first, then read replicas.
+- Use **Table Partitioning** by `created_at` (monthly) to keep indexes small.
+- Implement **Read Replicas** to handle high fetch traffic.
 
 ---
 
 ## Stage 3: Query Optimization
-**Problem:** `SELECT *` and no indexes makes fetching slow on large data.
+**Problem:** `SELECT *` without indexes causes full table scans, which is slow on millions of rows.
 
 **Optimized Query:**
 ```sql
 SELECT id, type, message, created_at 
 FROM notifications 
-WHERE studentId = 1042 AND isRead = false 
-ORDER BY createdAt DESC;
+WHERE student_id = 1042 AND is_read = 0 
+ORDER BY created_at ASC;
 ```
-**Index:** `CREATE INDEX idx_notif_query ON notifications(studentId, isRead, createdAt DESC);`
+**Index Strategy:** 
+`CREATE INDEX idx_notif_student_unread ON notifications(student_id, is_read, created_at ASC);`
 
-**Last 7 days placement notifs:**
+**Query for students with placement notifs (Last 7 days):**
 ```sql
-SELECT * FROM notifications 
-WHERE type = 'Placement' AND createdAt >= date('now', '-7 days');
+SELECT DISTINCT s.name, s.email 
+FROM students s 
+JOIN notifications n ON s.id = n.student_id 
+WHERE n.type = 'Placement' AND n.created_at >= date('now', '-7 days');
 ```
 
 ---
 
 ## Stage 4: Performance Fix
-- **Pagination:** Don't load everything. Use `LIMIT` and `OFFSET`.
-- **Caching:** Store recent notifs in Redis.
-- **Lazy Loading:** Frontend only fetches next page when scrolling down.
+- **Pagination:** Use `LIMIT` and `OFFSET` in the API to avoid loading thousands of rows at once.
+- **Caching:** Store the "Priority Inbox" or recent feed in **Redis** with a 60s TTL.
+- **Lazy Loading:** Frontend fetches data only when the user scrolls to the bottom.
 
 ---
 
 ## Stage 5: System Redesign
-**Issue:** Sync flow (`email -> db -> push`) is blocking. If email service is slow/fails, everything stops.
+**Problem:** The current flow (`send_email -> save_to_db -> push`) is synchronous. If the email service hangs, the notification is never saved or pushed.
 
-**Fix:** Use **Async Message Queue (RabbitMQ/Kafka)**.
-1. Save to DB.
-2. Push event to queue.
-3. Workers pick up from queue and send email/push separately.
-**Reliability:** Retries on failure without blocking the main API.
+**Fix:** Use an **Async Message Queue (RabbitMQ)**.
+1. API saves to DB immediately.
+2. API publishes a "NotificationCreated" event to RabbitMQ.
+3. Separate **Workers** subscribe to the queue to send emails and push notifications independently.
+**Reliability:** If a worker fails, the message stays in the queue for a retry.
 
 ---
 
 ## Stage 6: Priority Inbox (Logic)
 Implemented in `backend/services/priorityInbox.js`.
-1. Assign weight: Placement(1) < Result(2) < Event(3).
-2. Sort by weight, then by timestamp (newest first).
-3. Return top N.
+- Priority weights: Placement (1) > Result (2) > Event (3).
+- Sort logic: Compare by weight first, then by `createdAt` (newest first).
+- Returns the top N items for the user's dashboard.
 
 ---
 
 ## Stage 7: Frontend
-React app on port 3000.
-- `useState` for notif list and filters.
-- `useEffect` for fetching data and setting up SSE.
-- `PriorityInbox` component shows top 3 unread items.
-- Simple CSS for mobile/desktop toggle.
+React app running on port 3000.
+- **State:** `useState` for notifications and filter type.
+- **Real-time:** `useEffect` sets up an `EventSource` (SSE) listener.
+- **Mobile View:** Uses CSS flex-direction toggle and media queries for smaller screens.
+- **Logging:** Calls `Log("frontend", "info", "component", "...")` on user actions like filtering or marking read.
